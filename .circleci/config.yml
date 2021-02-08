@@ -9,8 +9,8 @@ jobs:
     steps:
       - checkout
       - python/load-cache
-      - python/install-packages:
-          pip-dependency-file: requirements-dev.txt
+      - python/install-deps:
+          pip-dependency-file: dev-requirements.txt
           pkg-manager: pip
       - python/save-cache
       - run:
