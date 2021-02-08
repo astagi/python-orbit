@@ -10,6 +10,5 @@ jobs:
       - run:
           name: Running tests
           command: |
-            . venv/bin/activate
             make test
             codecov
