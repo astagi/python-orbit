@@ -4,7 +4,7 @@
 
 [![Latest Version](https://img.shields.io/pypi/v/python-orbit.svg)](https://pypi.python.org/pypi/python-orbit/)
 [![codecov](https://codecov.io/gh/astagi/python-orbit/branch/master/graph/badge.svg)](https://codecov.io/gh/astagi/python-orbit)
-[![Build Status](https://travis-ci.org/astagi/python-orbit.svg?branch=master)](https://travis-ci.org/astagi/python-orbit)
+[![CircleCI](https://circleci.com/gh/astagi/python-orbit.svg?style=svg)](https://circleci.com/gh/astagi/python-orbit)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/astagi/python-orbit/blob/master/LICENSE)
 
 ⚠️ This project is WIP
