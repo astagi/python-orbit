@@ -7,6 +7,8 @@
 [![Build Status](https://travis-ci.org/astagi/python-orbit.svg?branch=master)](https://travis-ci.org/astagi/python-orbit)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/astagi/python-orbit/blob/master/LICENSE)
 
+⚠️ This project is WIP
+
 ## Install
 
 ```sh

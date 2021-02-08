@@ -15,8 +15,6 @@ activities = client.get_activities(
     auto_paginated=True
 )
 
-print (activities[0])
-
 for activity in activities:
     repo = activity['attributes']['tags'][1]
     last_activity = activity['attributes']['occurred_at']
