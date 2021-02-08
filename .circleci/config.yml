@@ -1,25 +1,21 @@
+version: 2
 jobs:
   build:
-    executor: python/default
+    docker:
+      - image: circleci/python:3.8
     steps:
       - checkout
-      - python/install-packages:
-          pkg-manager: pip
-      - python/install-packages:
-          pip-dependency-file: requirements-dev.txt
-          pkg-manager: pip
-      - python/install-packages:
-          args: pytest
-          pkg-manager: pip
-          pypi-cache: false
+      - restore_cache:
+          key: deps1-{{ .Branch }}-{{ checksum "requirements.txt" }}
       - run:
+          command: pip install -r requirements-dev.txt
+      - save_cache:
+          key: deps1-{{ .Branch }}-{{ checksum "requirements.txt" }}
+          paths:
+            - "venv"
+      - run:
+          name: Running tests
           command: |
-            pytest --version
-          name: Test
-orbs:
-  python: circleci/python@1.1.0
-version: 2.1
-workflows:
-  main:
-    jobs:
-      - build
+            . venv/bin/activate
+            make test
+            codecov
