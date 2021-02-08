@@ -1,0 +1,2 @@
+class OrbitException(Exception):
+    pass
