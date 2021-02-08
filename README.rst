@@ -3,7 +3,7 @@ Python Orbit
 
 🪐 Light Orbit API wrapper written in Python
 
-|Latest Version| |codecov| |Build Status| |License: MIT|
+|Latest Version| |codecov| |CircleCI| |License: MIT|
 
 ⚠️ This project is WIP
 
@@ -64,7 +64,7 @@ Run tests
    :target: https://pypi.python.org/pypi/python-orbit/
 .. |codecov| image:: https://codecov.io/gh/astagi/python-orbit/branch/master/graph/badge.svg
    :target: https://codecov.io/gh/astagi/python-orbit
-.. |Build Status| image:: https://travis-ci.org/astagi/python-orbit.svg?branch=master
-   :target: https://travis-ci.org/astagi/python-orbit
+.. |CircleCI| image:: https://circleci.com/gh/astagi/python-orbit.svg?style=svg
+   :target: https://circleci.com/gh/astagi/python-orbit
 .. |License: MIT| image:: https://img.shields.io/badge/License-MIT-blue.svg
    :target: https://github.com/astagi/python-orbit/blob/master/LICENSE
