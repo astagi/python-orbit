@@ -5,14 +5,8 @@ jobs:
       - image: circleci/python:3.8
     steps:
       - checkout
-      - restore_cache:
-          key: deps1-{{ .Branch }}-{{ checksum "requirements.txt" }}
       - run:
           command: pip install -r requirements-dev.txt
-      - save_cache:
-          key: deps1-{{ .Branch }}-{{ checksum "requirements.txt" }}
-          paths:
-            - "venv"
       - run:
           name: Running tests
           command: |
